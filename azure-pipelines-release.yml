@@ -19,10 +19,10 @@ pr: none
 resources:
   repositories:
   # Azure DevOps repository
-  - repository: hauki-pipelines
+  - repository: trigger-test-pipelines
     type: git
     # project/repository
-    name: hauki/hauki-pipelines
+    name: trigger-test/trigger-test-pipelines
 
 extends:
-  template: azure-pipelines-hauki-admin-ui-release.yml@hauki-pipelines
+  template: azure-pipelines-hauki-admin-ui-release.yml@trigger-test-pipelines
